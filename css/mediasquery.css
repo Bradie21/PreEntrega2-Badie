@@ -1,0 +1,67 @@
+@media screen and (max-width: 1440px) {
+  footer {
+    font-size: 15px;
+    background-color: #b89f7a;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }
+  .img-elaboracion-2 {
+    margin-bottom: 30px;
+  }
+  .img-main {
+    margin: 100px auto;
+    max-width: 100% auto;
+    height: auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 940px) {
+  .contenedor-img {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .menuhamburguesa {
+    display: block;
+    color: #8e5c15;
+  }
+  .navbar-toggler {
+    background: rgb(177, 122, 40);
+    color: #a86d1b;
+    background-color: rgba(213, 178, 88, 0.407);
+  }
+  .img-elaboracion-2 {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 605px) {
+  .img-elaboracion-1 {
+    width: 300px;
+  }
+  .img-elaboracion-2 {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 401px) {
+  .img-main {
+    width: 200px;
+    height: 250px;
+  }
+  .mobile {
+    text-align: center;
+    background-color: #b89f7a;
+    padding: 10px;
+    margin: 10px;
+    font-size: 5px;
+  }
+}
