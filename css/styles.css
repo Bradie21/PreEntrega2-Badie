@@ -21,7 +21,7 @@
 body > footer {
   background: linear-gradient(270deg, #b89f7a, #e5de91);
   background-size: 200% 200%;
-  animation: gradientAnimation 6s ease infinite;
+  animation: gradientAnimation 15s ease infinite;
 }
 
 .animated-header h1, header h1 h1 {
@@ -229,4 +229,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=styles.css..map */

@@ -1,0 +1,75 @@
+main {
+  @include flex-center;
+  padding: 20px 0;
+  margin: auto;
+}
+
+  .titulares {
+    padding: 15px;
+    text-align: center;
+    font-size: $font-size-large;
+  }
+  
+  .img-main {
+    width: 400px;
+    height: 400px;
+  
+    @include responsive(medium) {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    @include responsive(small) {
+      width: 200px;
+      height: 250px;
+    }
+  }
+  
+  .contenedor-img {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px auto;
+    padding: 50px;
+  
+    @include responsive(large) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .img-elaboracion-1,
+  .img-elaboracion-2 {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto 20px;
+  
+    @include responsive(medium) {
+      width: 300px;
+      height: auto;
+    }
+  }
+  
+  .form1 {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+    @include responsive(medium) {
+      width: 80%;
+    }
+  }
+  
+  .maps {
+    display: grid;
+    grid-template-columns: 1fr;
+  
+    &-ul {
+      display: grid;
+      margin: 10px auto;
+      padding: 70px;
+      grid-template-columns: 1fr;
+    }
+  }
