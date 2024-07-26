@@ -171,6 +171,7 @@ footer {
   padding: 20px;
   margin: 10px;
   text-align: center;
+  color: #4d4d4d;
 }
 @media (max-width: 1440px) {
   footer {
@@ -181,14 +182,15 @@ footer {
 }
 
 .social-links {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .social-links li {
-  display: inline-block;
-  margin-right: 10px;
+  margin: 0 10px;
 }
+
 .social-links li:last-child {
   margin-right: 0;
 }
@@ -198,6 +200,8 @@ footer {
   width: 30px;
   height: 30px;
   transition: all 0.3s ease;
+  background-color: transparent;
+  fill: currentColor;
 }
 .img-logos:hover,
 .img-logos1:hover {

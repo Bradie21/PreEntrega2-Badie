@@ -1,7 +1,8 @@
 header {
-  text-align: center;
-  padding: 20px;
   margin: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #b89f7a ;
 
   h1 {
     @extend .animated-header;
@@ -38,19 +39,8 @@ header {
 .menuhamburguesa {
   display: none;
 
-  @include responsive(medium) {
-    display: block;
-    color: darken($primary-color, 20%);
-  }
-
   .navbar-toggler {
     background: $primary-color;
     color: darken($primary-color, 20%);
-  }
-}
-
-@include responsive(medium) {
-  header nav {
-    display: none;
   }
 }

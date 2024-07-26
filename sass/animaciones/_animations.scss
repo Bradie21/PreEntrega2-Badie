@@ -1,0 +1,29 @@
+.animated-background {
+ background: linear-gradient(270deg, $primary-color, $secondary-color);
+ animation: gradientAnimation 8s ease infinite;
+}
+
+@keyframes gradientAnimation {
+ 0% {
+  background-position: 0% 50%;
+ }
+ 50% {
+  background-position: 100% 50%;
+ }
+ 100% {
+  background-position: 0% 50%;
+ }
+}
+
+.animated-header:hover {
+ animation: letterJump 0.3s ease-in-out;
+}
+
+@keyframes letterJump {
+ 0% {
+  transform: translateY(0);
+ }
+ 100% {
+  transform: translateY(-10px);
+ }
+}

@@ -1,0 +1,106 @@
+/* INDEX */
+main {
+  @include flex-center;
+}
+
+.titulares {
+  text-decoration: underline;
+  padding: 15px;
+  text-align: center;
+  font-size: $font-size-large;
+}
+
+.parrafos {
+  padding: 50px;
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.adress {
+  margin: 12px;
+}
+
+.img-main {
+  width: 400px;
+  height: 400px;
+}
+/* CONTACTO */
+.form1 {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ELABORACIÓN */
+
+.img-elaboracion-1,
+.img-elaboracion-2,
+.img-elaboracion-3,
+.img-elaboracion-4  {
+  width: 500px;
+  height: 400px;
+  margin: 0 auto 20px;
+}
+
+.carousel-item {
+  display: grid;
+  grid-template-columns: repeat (1fr);
+  grid-template-rows: repeat (1fr);
+  grid-gap: 30px;
+  overflow-y: auto;
+  justify-content: space-around;
+  text-align: center;
+  margin: 20px auto;
+  padding: 50px;
+
+  .carousel-item img {
+    object-fit: cover;
+    height: 500px; // Ajusta esta altura según tus necesidades
+  }
+
+  .carousel-caption {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+    .carousel-caption {
+      padding: 10px;
+    }
+    
+    .carousel-caption h5 {
+      font-size: 18px;
+    }
+    
+    .carousel-caption p {
+      font-size: 14px;
+    }
+  }
+  
+
+/* SUCURSALES */
+.vertepronto {
+  font-size: $font-size-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafosucursales {
+  margin: 12px;
+}
+
+.maps {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &-ul {
+    display: grid;
+    margin: 10px auto;
+    padding: 0px;
+    grid-template-columns: 1fr;
+  }
+}

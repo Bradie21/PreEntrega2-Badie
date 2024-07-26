@@ -1,0 +1,14 @@
+@mixin flex-center {
+ margin: auto;
+ padding: 20px 0px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+@mixin hover-effect {
+ transition: all 0.3s ease;
+ &:hover {
+  transform: scale(1.05);
+ }
+}
