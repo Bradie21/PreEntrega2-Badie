@@ -1,14 +1,15 @@
 @mixin flex-center {
- margin: auto;
- padding: 20px 0px;
- display: flex;
- align-items: center;
- justify-content: center;
+  margin: auto;
+  display: grid;
+  padding: 20px 0px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr;
 }
 
 @mixin hover-effect {
- transition: all 0.3s ease;
- &:hover {
-  transform: scale(1.05);
- }
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
 }

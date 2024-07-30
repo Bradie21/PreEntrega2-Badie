@@ -4,20 +4,30 @@ main {
 }
 
 .titulares {
-  text-decoration: underline;
   padding: 15px;
   text-align: center;
+  text-decoration: underline;
   font-size: $font-size-large;
 }
 
 .parrafos {
-  padding: 50px;
   margin: 12px;
   display: flex;
-  justify-content: center;
+  font-size: 20px;
   text-align: center;
+  padding: 15px 75px;
+  align-items: center;
+  justify-content: center;
 }
-
+.div-parrafo-contacto {
+  padding: 50px 0px;
+}
+.parrafo-contacto {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .adress {
   margin: 12px;
 }
@@ -40,46 +50,101 @@ main {
 .img-elaboracion-1,
 .img-elaboracion-2,
 .img-elaboracion-3,
-.img-elaboracion-4  {
+.img-elaboracion-4 {
   width: 500px;
   height: 400px;
   margin: 0 auto 20px;
 }
 
-.carousel-item {
-  display: grid;
-  grid-template-columns: repeat (1fr);
-  grid-template-rows: repeat (1fr);
-  grid-gap: 30px;
-  overflow-y: auto;
-  justify-content: space-around;
-  text-align: center;
-  margin: 20px auto;
-  padding: 50px;
+/* SLIDER DE ELABORACIÓN */
 
-  .carousel-item img {
-    object-fit: cover;
-    height: 500px; // Ajusta esta altura según tus necesidades
+.background-color-section {
+  .segundo-titulo-logos {
+    color: $secondary-color;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 50px;
+    text-align: center;
   }
+}
 
-  .carousel-caption {
-    padding: 20px;
-    border-radius: 10px;
+.color-de-fondo-slider-logos {
+  background-color: $secondary-color;
+
+  .slider-logos-div {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+
+    .ul-slider {
+      padding: 0;
+      width: 200%;
+      margin: auto;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      animation: slider 6s infinite alternate ease-in-out;
+
+      .li-slider {
+        width: 100%;
+        margin: auto;
+        display: block;
+        list-style: none;
+        padding: 0 50px;
+        text-align: center;
+
+        img {
+          transition: transform 3s linear;
+
+          &:hover {
+            transform: scale (1);
+          }
+        }
+
+        // Logo specific styles
+        &:nth-child(1) .img-elaboracion-1,
+        &:nth-child(2) .img-elaboracion-2,
+        &:nth-child(3) .img-elaboracion-3,
+        &:nth-child(4) .img-elaboracion-4,
+        .img-elaboracion-1 {
+          width: 500px;
+          height: 400px;
+        }
+        .img-elaboracion-2 {
+          width: 500px;
+          height: 400px;
+        }
+        .img-elaboracion-3 {
+          width: 500px;
+          height: 400px;       
+         }
+        .img-elaboracion-4 {
+          width: 500px;
+          height: 400px;
+        }
+      }
+    }
   }
-  
-    .carousel-caption {
-      padding: 10px;
-    }
-    
-    .carousel-caption h5 {
-      font-size: 18px;
-    }
-    
-    .carousel-caption p {
-      font-size: 14px;
-    }
+}
+
+/* KEYFRAMES */
+@keyframes slider {
+  0% {
+    margin-left: 0%;
   }
-  
+  25% {
+    margin-left: -20%;
+  }
+  50% {
+    margin-left: -40%;
+  }
+  75% {
+    margin-left: -60%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
 
 /* SUCURSALES */
 .vertepronto {
@@ -92,14 +157,19 @@ main {
 .parrafosucursales {
   margin: 12px;
 }
-
+.mapa {
+  width: 600px;
+}
+.maps-ul li {
+  padding: 25px 0px;
+}
 .maps {
   display: grid;
   grid-template-columns: 1fr;
 
   &-ul {
     display: grid;
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 0px;
     grid-template-columns: 1fr;
   }

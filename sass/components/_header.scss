@@ -1,8 +1,8 @@
 header {
-  margin: 10px;
+  margin: 0px;
   padding: 20px;
   text-align: center;
-  background-color: #b89f7a ;
+  background-color: #b89f7a;
 
   h1 {
     @extend .animated-header;
@@ -43,4 +43,12 @@ header {
     background: $primary-color;
     color: darken($primary-color, 20%);
   }
+  .collapse
+   .btn-li{
+    color: darken($primary-color, 20%);
+   }
+    a {
+      color: black;
+      font-size: 14px;
+    }
 }

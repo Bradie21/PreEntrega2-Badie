@@ -1,22 +1,22 @@
 @media screen and (max-width: 768px) {
- .header {
-  display: none;
- }
- .menuhamburguesa {
-  display: block;
-  color: #8e5c15;
- }
- .navbar-toggler {
-  background: rgb(177, 122, 40);
-  color: #a86d1b;
-  background-color: rgba(213, 178, 88, 0.407);
- }
- .img-elaboracion-2 {
-  margin-bottom: 30px;
- }
+  .header {
+    display: none;
+  }
+  .menuhamburguesa {
+    display: block;
+    color: #8e5c15;
+  }
+  .navbar-toggler {
+    background: rgb(177, 122, 40);
+    color: #a86d1b;
+    background-color: rgba(213, 178, 88, 0.407);
+  }
+  .img-elaboracion-2 {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 768px) {
-    .carousel-item img {
-      height: 300px;
-    }
+  .carousel-item img {
+    height: 300px;
+  }
 }

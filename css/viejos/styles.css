@@ -10,24 +10,28 @@
   }
 }
 @keyframes letterJump {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-10px);
   }
 }
-.animated-background, body > header,
+.animated-background,
+body > header,
 body > footer {
   background: linear-gradient(270deg, #b89f7a, #e5de91);
   background-size: 200% 200%;
   animation: gradientAnimation 15s ease infinite;
 }
 
-.animated-header h1, header h1 h1 {
+.animated-header h1,
+header h1 h1 {
   display: inline-block;
 }
-.animated-header h1:hover span, header h1 h1:hover span {
+.animated-header h1:hover span,
+header h1 h1:hover span {
   display: inline-block;
   animation: letterJump 0.5s ease;
 }
@@ -232,5 +236,4 @@ body {
     padding: 0 10px;
   }
 }
-
 /*# sourceMappingURL=styles.css..map */
