@@ -45,17 +45,6 @@ main {
   text-align: center;
 }
 
-/* ELABORACIÓN */
-
-.img-elaboracion-1,
-.img-elaboracion-2,
-.img-elaboracion-3,
-.img-elaboracion-4 {
-  width: 500px;
-  height: 400px;
-  margin: 0 auto 20px;
-}
-
 /* SLIDER DE ELABORACIÓN */
 
 .background-color-section {
@@ -97,7 +86,7 @@ main {
           transition: transform 3s linear;
 
           &:hover {
-            transform: scale (1);
+            transform: scale (1,15);
           }
         }
 
@@ -111,16 +100,16 @@ main {
           height: 400px;
         }
         .img-elaboracion-2 {
-          width: 500px;
-          height: 400px;
+          width: 400px;
+          height: 300px;
         }
         .img-elaboracion-3 {
-          width: 500px;
-          height: 400px;       
+          width: 400px;
+          height: 300px;      
          }
         .img-elaboracion-4 {
-          width: 500px;
-          height: 400px;
+          width: 400px;
+          height: 300px;
         }
       }
     }
